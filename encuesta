@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encuesta de Reclutamiento</title>
+</head>
+<body>
+    <h1>Encuesta de Reclutamiento para Proyecto de Intervención Social</h1>
+    <p>Por favor, completa esta encuesta para ayudarnos a evaluar tus competencias, disponibilidad y nivel de compromiso.</p>
+
+    <form action="https://formspree.io/f/tu-id" method="POST">
+        <label for="name">Nombre Completo:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Correo Electrónico:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="phone">Número de Teléfono:</label><br>
+        <input type="tel" id="phone" name="phone"><br><br>
+
+        <label for="availability">Disponibilidad de Tiempo:</label><br>
+        <input type="checkbox" name="availability" value="Mañanas"> Mañanas (Lunes a Viernes)<br>
+        <input type="checkbox" name="availability" value="Tardes"> Tardes (Lunes a Viernes)<br>
+        <input type="checkbox" name="availability" value="Fines de Semana"> Fines de Semana<br>
+        <input type="checkbox" name="availability" value="Horario Flexible"> Horario Flexible<br><br>
+
+        <label for="competences">Competencias o Experiencia:</label><br>
+        <input type="checkbox" name="competences" value="Trabajo con adicciones"> Trabajo con personas en situación de adicción<br>
+        <input type="checkbox" name="competences" value="Coaching emocional"> Coaching emocional o desarrollo de competencias emocionales<br>
+        <input type="checkbox" name="competences" value="Facilitación de talleres"> Facilitación de talleres o entrenamientos grupales<br>
+        <input type="checkbox" name="competences" value="Intervención social"> Experiencia en intervención social o comunitaria<br>
+        <input type="checkbox" name="competences" value="Psicología o trabajo social"> Psicología o trabajo social<br>
+        <input type="checkbox" name="competences" value="Educación en salud mental"> Educación o formación en salud mental<br>
+        <input type="checkbox" name="competences" value="Otros"> Otros: <input type="text" name="otros"><br><br>
+
+        <label for="commitment">Nivel de compromiso (1-5):</label><br>
+        <input type="radio" name="commitment" value="1"> 1 - Poco comprometido<br>
+        <input type="radio" name="commitment" value="2"> 2 - Moderadamente comprometido<br>
+        <input type="radio" name="commitment" value="3"> 3 - Comprometido<br>
+        <input type="radio" name="commitment" value="4"> 4 - Muy comprometido<br>
+        <input type="radio" name="commitment" value="5"> 5 - Totalmente comprometido<br><br>
+
+        <label for="motivation">¿Por qué te interesa participar en este proyecto?</label><br>
+        <textarea id="motivation" name="motivation" rows="4" cols="50"></textarea><br><br>
+
+        <label for="expectations">¿Cuáles son tus expectativas personales y profesionales al participar?</label><br>
+        <textarea id="expectations" name="expectations" rows="4" cols="50"></textarea><br><br>
+
+        <label for="collaboration">¿Preferencia en área de colaboración (adicciones o entrenamiento emocional)?</label><br>
+        <textarea id="collaboration" name="collaboration" rows="2" cols="50"></textarea><br><br>
+
+        <label for="comments">Comentarios adicionales o disponibilidad para entrevista:</label><br>
+        <textarea id="comments" name="comments" rows="2" cols="50"></textarea><br><br>
+
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
